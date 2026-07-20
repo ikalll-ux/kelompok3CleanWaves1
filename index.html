@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CleanWaves Laundry - Premium Service Portal</title>
+    <!-- TailwindCSS CSS & Play CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-slate-50 font-sans text-slate-800 antialiased pt-20">
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-md border-b border-sky-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <span onclick="navigateTo('home')" class="text-xl font-bold text-sky-700 tracking-wide cursor-pointer">CleanWaves.</span>
+                <div class="hidden lg:flex items-center space-x-4 text-xs font-medium text-slate-600 overflow-x-auto max-w-[600px] whitespace-nowrap py-2">
+                    <button onclick="navigateTo('home')" class="hover:text-sky-600 cursor-pointer">Home</button>
+                    <button onclick="navigateTo('layanan')" class="hover:text-sky-600 cursor-pointer">Layanan</button>
+                    <button onclick="navigateTo('harga')" class="hover:text-sky-600 cursor-pointer">Harga</button>
+                    <button onclick="navigateTo('tracking')" class="hover:text-sky-600 cursor-pointer">Lacak</button>
+                    <button onclick="navigateTo('membership')" class="hover:text-sky-600 cursor-pointer">Membership</button>
+                    <button onclick="navigateTo('promo')" class="hover:text-sky-600 cursor-pointer">Promo</button>
+                    <button onclick="navigateTo('karir')" class="hover:text-sky-600 cursor-pointer">Karir</button>
+                    <button onclick="navigateTo('faq')" class="hover:text-sky-600 cursor-pointer">FAQ</button>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="order.html" class="bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold uppercase px-4 py-2 rounded-full shadow-md transition-all">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION: HOME -->
+    <div id="home" class="page-section active animate-fade-in">
+        <section class="py-12 px-6 max-w-7xl mx-auto min-h-[85vh] flex flex-col justify-center">
+            
+            <!-- Hero Slider / Layout Multi-Hero -->
+            <div class="w-full relative bg-slate-100 rounded-3xl overflow-hidden shadow-lg border border-slate-200 mb-12">
+                <!-- Slides Container -->
+                <div id="heroSlider" class="relative h-[450px] w-full">
+                    
+                    <!-- Hero 1 -->
+                    <div class="hero-slide active absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-100 flex items-center">
+                        <div class="absolute inset-0 bg-linear-to-r from-sky-900/90 via-sky-800/70 to-transparent z-10"></div>
+                        <!-- TEMPLATE HERO IMAGE 1 -->
+                        <img src="asset/gantungan baju.png" alt="Silakan ganti dengan gambar Anda (hero1.jpg)" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="relative z-20 max-w-xl px-8 md:px-16 text-white space-y-4">
+                            <span class="inline-block text-xs font-bold uppercase tracking-widest bg-sky-500 text-white px-3 py-1 rounded-md">Premium Care</span>
+                            <h2 class="text-3xl md:text-5xl font-light tracking-tight leading-tight">Pakaian bersih maksimal, <br><span class="font-medium text-sky-300">tanpa menguras waktu Anda.</span></h2>
+                            <p class="text-sky-100/80 text-sm">Kami merawat setiap helai pakaian Anda dengan teknologi modern dan detergen ramah lingkungan. Tinggal klik, kami jemput dan antar kembali.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hero 2 -->
+                    <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 flex items-center">
+                        <div class="absolute inset-0 bg-linear-to-r from-teal-900/90 via-teal-800/70 to-transparent z-10"></div>
+                        <!-- TEMPLATE HERO IMAGE 2 -->
+                        <img src="asset/higenis.png" alt="Silakan ganti dengan gambar Anda (hero2.jpg)" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="relative z-20 max-w-xl px-8 md:px-16 text-white space-y-4">
+                            <span class="inline-block text-xs font-bold uppercase tracking-widest bg-teal-500 text-white px-3 py-1 rounded-md">Fast & Express</span>
+                            <h2 class="text-3xl md:text-5xl font-light tracking-tight leading-tight">Butuh Cepat? <br><span class="font-medium text-teal-300">Layanan Kilat 6 Jam Selesai!</span></h2>
+                            <p class="text-teal-100/80 text-sm">Jalur khusus cuci express untuk kebutuhan mendesak Anda. Dijamin bersih, rapi, dan langsung wangi siap pakai.</p>
+                        </div>
+                    </div>
+
+                    <!-- Hero 3 -->
+                    <div class="hero-slide absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 flex items-center">
+                        <div class="absolute inset-0 bg-linear-to-r from-indigo-900/90 via-indigo-800/70 to-transparent z-10"></div>
+                        <!-- TEMPLATE HERO IMAGE 3 -->
+                        <img src="asset/1 mesin cuci.png" alt="Silakan ganti dengan gambar Anda (hero3.jpg)" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="relative z-20 max-w-xl px-8 md:px-16 text-white space-y-4">
+                            <span class="inline-block text-xs font-bold uppercase tracking-widest bg-indigo-500 text-white px-3 py-1 rounded-md">Hygienic Process</span>
+                            <h2 class="text-3xl md:text-5xl font-light tracking-tight leading-tight">1 Mesin 1 Pelanggan <br><span class="font-medium text-indigo-300">Higienitas Penuh Terjamin.</span></h2>
+                            <p class="text-indigo-100/80 text-sm">Kami berkomitmen menjaga pakaian Anda agar tidak tertukar atau dicampur dengan pakaian orang lain. Keamanan & kebersihan teratas.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Controls Arrows -->
+                <button onclick="prevHero()" class="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-xs text-white p-2 rounded-full transition-all cursor-pointer">
+                    &#10094;
+                </button>
+                <button onclick="nextHero()" class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 backdrop-blur-xs text-white p-2 rounded-full transition-all cursor-pointer">
+                    &#10095;
+                </button>
+
+                <!-- Slider Indicators Dots -->
+                <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
+                    <span onclick="setHero(0)" class="hero-dot w-2.5 h-2.5 rounded-full bg-white opacity-100 cursor-pointer transition-all"></span>
+                    <span onclick="setHero(1)" class="hero-dot w-2.5 h-2.5 rounded-full bg-white opacity-40 cursor-pointer transition-all"></span>
+                    <span onclick="setHero(2)" class="hero-dot w-2.5 h-2.5 rounded-full bg-white opacity-40 cursor-pointer transition-all"></span>
+                </div>
+            </div>
+
+            <!-- Quick Access Menu Buttons -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto w-full">
+                <button onclick="navigateTo('layanan')" class="border border-sky-200 bg-white hover:bg-sky-50 p-4 rounded-2xl text-center transition-all text-xs font-medium shadow-xs cursor-pointer">📋 Semua Layanan</button>
+                <button onclick="navigateTo('harga')" class="border border-sky-200 bg-white hover:bg-sky-50 p-4 rounded-2xl text-center transition-all text-xs font-medium shadow-xs cursor-pointer">💰 Daftar Harga</button>
+                <button onclick="navigateTo('tracking')" class="border border-sky-200 bg-white hover:bg-sky-50 p-4 rounded-2xl text-center transition-all text-xs font-medium shadow-xs cursor-pointer">📦 Lacak Laundry</button>
+                <a href="order.html" class="border border-sky-200 bg-sky-600 hover:bg-sky-700 text-white p-4 rounded-2xl text-center transition-all text-xs font-semibold shadow-xs flex items-center justify-center">🛒 Pesan Sekarang</a>
+            </div>
+        </section>
+
+        <section class="py-16 bg-sky-50/50 border-t border-sky-100 text-center px-6">
+            <h2 class="text-2xl font-light text-slate-900">Tentang <span class="font-medium text-sky-600">CleanWaves</span></h2>
+            <p class="text-slate-600 max-w-2xl mx-auto mt-4 text-sm">Lahir dari keinginan memberikan kemudahan di tengah kesibukan modern, kami membawa standar baru perawatan pakaian dengan memadukan teknologi canggih dan ketepatan waktu.</p>
+        </section>
+    </div>
+
+    <!-- SECTION: LAYANAN -->
+    <div id="layanan" class="page-section py-16 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Layanan <span class="font-medium text-sky-600">Terbaik Kami</span></h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div onclick="navigateTo('layanan-kiloan')" class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all cursor-pointer">
+                <div class="text-sky-600 text-2xl mb-4">🧺</div>
+                <h3 class="text-lg font-medium mb-2">Cuci Lipat Kiloan</h3>
+                <p class="text-slate-500 text-sm">Solusi hemat sehari-hari untuk pakaian kasual. Bersih, wangi, rapi dilipat.</p>
+            </div>
+            <div onclick="navigateTo('layanan-satuan')" class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all cursor-pointer">
+                <div class="text-sky-600 text-2xl mb-4">👔</div>
+                <h3 class="text-lg font-medium mb-2">Cuci Satuan Premium</h3>
+                <p class="text-slate-500 text-sm">Perlakuan khusus untuk kemeja, jas, gaun, dan pakaian formal kesayangan Anda.</p>
+            </div>
+            <div onclick="navigateTo('layanan-express')" class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-all cursor-pointer">
+                <div class="text-sky-600 text-2xl mb-4">⚡</div>
+                <h3 class="text-lg font-medium mb-2">Layanan Express (6 Jam)</h3>
+                <p class="text-slate-500 text-sm">Butuh cepat? Kami selesaikan cucian Anda hanya dalam hitungan jam.</p>
+            </div>
+        </div>
+        <div class="mt-8 text-center">
+            <button onclick="navigateTo('layanan-karpet')" class="text-sm font-medium text-sky-600 hover:underline cursor-pointer">Lihat Layanan Khusus (Karpet, Sepatu, dll) →</button>
+        </div>
+    </div>
+
+    <!-- SUB-LAYANAN PAGES -->
+    <div id="layanan-kiloan" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <button onclick="navigateTo('layanan')" class="text-xs text-sky-600 font-medium mb-4 inline-block cursor-pointer">← Kembali ke Layanan</button>
+        <h2 class="text-3xl font-medium text-slate-900 mb-4">Cuci Kiloan Premium</h2>
+        <p class="text-slate-600 mb-6">Layanan penanganan pakaian harian dengan jaminan higienis tinggi. Satu mesin cuci hanya didedikasikan untuk satu pelanggan (tidak dicampur).</p>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 space-y-4 shadow-sm">
+            <h3 class="font-semibold text-slate-800">Apa saja yang didapat?</h3>
+            <ul class="space-y-2 text-sm text-slate-600 list-disc list-inside">
+                <li>Pemisahan pakaian berwarna dan putih.</li>
+                <li>Detergen cair ramah lingkungan bermutu tinggi.</li>
+                <li>Setrika uap anti gosong.</li>
+                <li>Packing plastik tersegel rapi.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="layanan-satuan" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <button onclick="navigateTo('layanan')" class="text-xs text-sky-600 font-medium mb-4 inline-block cursor-pointer">← Kembali ke Layanan</button>
+        <h2 class="text-3xl font-medium text-slate-900 mb-4">Cuci Satuan Exquisite</h2>
+        <p class="text-slate-600 mb-6">Didesain khusus untuk pakaian yang membutuhkan teknik pembersihan spesifik seperti Dry Cleaning atau Wet Cleaning terkontrol.</p>
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 space-y-4 shadow-sm">
+            <h3 class="font-semibold text-slate-800">Kategori Pakaian Didukung:</h3>
+            <div class="grid grid-cols-2 gap-3 text-sm text-slate-600">
+                <div class="p-3 bg-slate-50 rounded-xl">👔 Jas & Tuxedo</div>
+                <div class="p-3 bg-slate-50 rounded-xl">👗 Kebaya & Gown</div>
+                <div class="p-3 bg-slate-50 rounded-xl">🧥 Jaket Kulit / Suede</div>
+                <div class="p-3 bg-slate-50 rounded-xl">🧣 Kain Sutra / Batik</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="layanan-express" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <button onclick="navigateTo('layanan')" class="text-xs text-sky-600 font-medium mb-4 inline-block cursor-pointer">← Kembali ke Layanan</button>
+        <h2 class="text-3xl font-medium text-slate-900 mb-4">⚡ Flash Express Service</h2>
+        <p class="text-slate-600 mb-6">Waktu Anda sangat berharga. Melalui sistem jalur cepat, pakaian kotor Anda siap digunakan kembali dalam waktu 6 Jam saja semenjak penjemputan.</p>
+        <div class="bg-sky-50 border border-sky-100 p-6 rounded-2xl">
+            <p class="text-sm text-sky-800 font-medium">Syarat & Ketentuan Express:</p>
+            <p class="text-xs text-sky-600 mt-1">Maksimal muatan 10 kg per order dan konfirmasi penjemputan dilakukan sebelum jam 12:00 WIB siang.</p>
+        </div>
+    </div>
+
+    <div id="layanan-karpet" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <button onclick="navigateTo('layanan')" class="text-xs text-sky-600 font-medium mb-4 inline-block cursor-pointer">← Kembali</button>
+        <h2 class="text-3xl font-medium text-slate-900 mb-4">Layanan Cuci Perlengkapan Rumah & Sepatu</h2>
+        <div class="space-y-4 mt-6">
+            <div class="bg-white p-5 rounded-xl border border-slate-100">
+                <h4 class="font-medium text-slate-800">🧼 Deep Clean Sepatu & Tas</h4>
+                <p class="text-xs text-slate-500 mt-1">Sistem cuci manual detail tinggi disesuaikan dengan jenis bahan (Kanvas, Nubuck, Kulit).</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-100">
+                <h4 class="font-medium text-slate-800">🏠 Karpet, Gordyn & Bed Cover</h4>
+                <p class="text-xs text-slate-500 mt-1">Pembersihan mikroorganisme, tungau, debu tebal menggunakan ekstraktor vakum daya tinggi.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: HARGA -->
+    <div id="harga" class="page-section py-16 px-6 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-4">Transparansi <span class="font-medium text-sky-600">Daftar Harga</span></h2>
+        <p class="text-center text-slate-500 text-sm mb-12">Tidak ada biaya tersembunyi. Semua harga dihitung berdasarkan timbangan digital jujur.</p>
+        <div class="max-w-2xl mx-auto bg-white rounded-2xl border border-slate-100 shadow-sm overflow-hidden">
+            <table class="w-full text-left text-sm">
+                <thead class="bg-slate-50 text-slate-600 text-xs font-semibold uppercase">
+                    <tr>
+                        <th class="p-4">Jenis Layanan</th>
+                        <th class="p-4">Estimasi Waktu</th>
+                        <th class="p-4 text-right">Harga</th>
+                    </tr>
+                </thead>
+                <tbody id="hargaTableBody" class="divide-y divide-slate-100">
+                    <!-- Baris harga dirender otomatis oleh index.js, bersumber dari data layanan yang sama dipakai admin -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION: TRACKING STATUS LAUNDRY (DENGAN TAHAPAN REAL-TIME) -->
+    <div id="tracking" class="page-section py-16 px-6 max-w-xl mx-auto">
+        <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm text-center">
+            <span class="text-3xl">📦</span>
+            <h2 class="text-xl font-medium text-slate-900 mt-3 mb-2">Lacak Status Laundry</h2>
+            <p class="text-xs text-slate-500 mb-6">Tidak perlu login. Masukkan nomor struk/tanda terima yang diberikan petugas outlet setelah pakaian Anda ditimbang.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-2 mb-6">
+                <input type="text" id="trackInput" placeholder="Contoh: NOTA-1025" class="w-full text-center px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:border-sky-500 uppercase">
+                <button onclick="checkOrderStatus()" class="bg-sky-600 hover:bg-sky-700 text-white font-medium text-sm px-6 py-3 rounded-xl transition-all cursor-pointer whitespace-nowrap">Periksa Status</button>
+            </div>
+
+            <!-- HASIL LACAK / TRACKING TIMELINE DISPLAY -->
+            <div id="trackingResultBox" class="text-left border-t border-slate-100 pt-6 mt-4 hidden">
+                <div class="bg-sky-50 p-4 rounded-xl border border-sky-100 mb-6">
+                    <div class="grid grid-cols-2 gap-2 text-xs">
+                        <div><span class="text-slate-400">ID Pesanan:</span> <span id="resOrderId" class="font-bold text-slate-800"></span></div>
+                        <div><span class="text-slate-400">Pelanggan:</span> <span id="resOrderNama" class="font-bold text-slate-800"></span></div>
+                        <div class="col-span-2"><span class="text-slate-400">Paket:</span> <span id="resOrderPaket" class="font-medium text-sky-700"></span></div>
+                    </div>
+                </div>
+
+                <p class="text-xs font-semibold text-slate-700 uppercase mb-4">Progres Pengerjaan Pakaian:</p>
+                
+                <!-- Timeline Component Interaktif -->
+                <div class="relative pl-6 space-y-6 border-l border-slate-200 ml-3">
+                    
+                    <!-- Step 1: Masuk Antrian -->
+                    <div id="step-antrian" class="relative">
+                        <div class="dot-indicator absolute -left-[31px] top-1 w-4 h-4 rounded-full border-2 border-white bg-slate-300"></div>
+                        <h4 class="text-xs font-bold text-slate-700 title-step">Masuk Dalam Antrian</h4>
+                        <p id="desc-antrian" class="text-[11px] text-slate-400 desc-step">Pesanan telah diterima outlet dan menunggu giliran proses pencucian.</p>
+                    </div>
+
+                    <!-- Step 2: Proses Pencucian -->
+                    <div id="step-cuci" class="relative">
+                        <div class="dot-indicator absolute -left-[31px] top-1 w-4 h-4 rounded-full border-2 border-white bg-slate-300"></div>
+                        <h4 class="text-xs font-bold text-slate-400 title-step">Proses Pencucian</h4>
+                        <p id="desc-cuci" class="text-[11px] text-slate-400 desc-step">Pakaian sedang dipilah berdasarkan jenis kain/warna dan masuk tahap pencucian higienis.</p>
+                    </div>
+
+                    <!-- Step 3: Proses Setrika Uap -->
+                    <div id="step-setrika" class="relative">
+                        <div class="dot-indicator absolute -left-[31px] top-1 w-4 h-4 rounded-full border-2 border-white bg-slate-300"></div>
+                        <h4 class="text-xs font-bold text-slate-400 title-step">Proses Setrika Uap</h4>
+                        <p id="desc-setrika" class="text-[11px] text-slate-400 desc-step">Tahap pelembutan kain menggunakan sistem uap anti gosong dan sterilisasi anti bakteri.</p>
+                    </div>
+
+                    <!-- Step 4: Siap diantar / diambil -->
+                    <div id="step-siap" class="relative">
+                        <div class="dot-indicator absolute -left-[31px] top-1 w-4 h-4 rounded-full border-2 border-white bg-slate-300"></div>
+                        <h4 class="text-xs font-bold text-slate-400 title-step">Siap Diantar / Diambil</h4>
+                        <p id="desc-siap" class="text-[11px] text-slate-400 desc-step">Pakaian sudah di-packing dengan rapi dalam plastik tersegel wangi dan siap dikirim balik.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- DEFAULT VIEW INFO TAHAPAN -->
+            <div id="defaultTrackInfo" class="mt-8 text-left border-t border-slate-100 pt-4 text-slate-500">
+                <p class="text-xs font-semibold text-slate-700 uppercase">Daftar Status Regulasi Kami:</p>
+                <div class="mt-2 space-y-2 text-xs">
+                    <div>⚪ Masuk Dalam Antrian</div>
+                    <div>⚪ Proses Pencucian</div>
+                    <div>⚪ Proses Setrika Uap</div>
+                    <div>⚪ Siap Diantar / Diambil</div>
+                </div>
+                <div class="mt-4 p-3 bg-slate-50 rounded-xl border border-slate-100 text-[11px]">
+                    💡 <span class="text-slate-600">Belum punya nomor struk? Ajukan penjemputan lewat <a href="order.html" class="text-sky-600 font-medium hover:underline">Order Sekarang</a>, lalu tunggu petugas outlet menimbang &amp; menerbitkan nomor struk untuk pelacakan.</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- SECTION: MEMBERSHIP -->
+    <div id="membership" class="page-section py-16 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-2">Paket Langganan <span class="font-medium text-sky-600">Membership</span></h2>
+        <p class="text-center text-slate-500 text-sm mb-12">Lebih sering cuci baju, lebih banyak menghemat biaya bulanan.</p>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 text-center space-y-4">
+                <h4 class="font-medium text-slate-700">Silver Wave</h4>
+                <div class="text-2xl font-bold text-slate-900">Rp 150.000<span class="text-xs text-slate-400">/bln</span></div>
+                <p class="text-xs text-slate-500">Kuota cuci kiloan hingga 20 Kilogram per bulan. Gratis jemput radius 3km.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border-2 border-sky-400 text-center space-y-4 relative">
+                <span class="absolute top-0 right-1/2 translate-x-1/2 -top-3 bg-sky-500 text-white text-[10px] px-2 py-0.5 rounded-full uppercase font-bold">Populer</span>
+                <h4 class="font-medium text-slate-700">Gold Wave</h4>
+                <div class="text-2xl font-bold text-slate-900">Rp 280.000<span class="text-xs text-slate-400">/bln</span></div>
+                <p class="text-xs text-slate-500">Kuota cuci kiloan hingga 40 Kilogram per bulan. Gratis antar-jemput tanpa batasan jarak dekat.</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 text-center space-y-4">
+                <h4 class="font-medium text-slate-700">Royal Wave</h4>
+                <div class="text-2xl font-bold text-slate-900">Rp 500.000<span class="text-xs text-slate-400">/bln</span></div>
+                <p class="text-xs text-slate-500">Kuota cuci 60kg + Free 5 Pcs cuci jas/satuan premium. Prioritas pengerjaan kilat.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: PROMO -->
+    <div id="promo" class="page-section py-16 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Klaim Promo <span class="font-medium text-sky-600">Bulan Ini</span></h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-gradient-to-br from-sky-600 to-sky-700 text-white p-6 rounded-2xl flex justify-between items-center shadow-lg">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded">Pengguna Baru</span>
+                    <h3 class="text-xl font-bold mt-2">Diskon 30%</h3>
+                    <p class="text-xs text-sky-100 mt-1">Gunakan kode voucher: <span class="font-mono font-bold bg-black/20 px-1.5 py-0.5 rounded">WAVENEW</span></p>
+                </div>
+                <button onclick="alert('Kode WAVENEW berhasil disalin!')" class="bg-white text-sky-700 text-xs font-semibold px-3 py-2 rounded-lg cursor-pointer">Salin</button>
+            </div>
+            <div class="bg-gradient-to-br from-teal-600 to-teal-700 text-white p-6 rounded-2xl flex justify-between items-center shadow-lg">
+                <div>
+                    <span class="text-[10px] font-bold uppercase tracking-wider bg-white/20 px-2 py-0.5 rounded">Hari Jumat</span>
+                    <h3 class="text-xl font-bold mt-2">Jumat Berkah Free 1kg</h3>
+                    <p class="text-xs text-teal-100 mt-1">Minimal cuci 5kg di hari Jumat otomatis dipotong 1kg.</p>
+                </div>
+                <span class="text-2xl">✨</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: KARIR -->
+    <div id="karir" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-medium text-slate-900 mb-2 text-center">Bergabung Bersama Kami</h2>
+        <p class="text-center text-sm text-slate-500 mb-12">CleanWaves membuka peluang berkarir bagi Anda yang berdedikasi tinggi dan teliti.</p>
+        <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-100 flex justify-between items-center">
+                <div>
+                    <h4 class="font-semibold text-slate-800">Operational Laundry Staff</h4>
+                    <p class="text-xs text-slate-400">Full-Time | Penempatan Jakarta Barat</p>
+                </div>
+                <button onclick="alert('Silakan kirim CV ke email recruitment@cleanwaves.com')" class="text-xs font-medium text-sky-600 bg-sky-50 px-3 py-2 rounded-lg hover:bg-sky-100 cursor-pointer">Lamar Kerja</button>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-100 flex justify-between items-center">
+                <div>
+                    <h4 class="font-semibold text-slate-800">Kurir Driver Antar-Jemput (Mitra)</h4>
+                    <p class="text-xs text-slate-400">Freelance | Memiliki SIM C Aktif</p>
+                </div>
+                <button onclick="alert('Silakan kirim CV ke email recruitment@cleanwaves.com')" class="text-xs font-medium text-sky-600 bg-sky-50 px-3 py-2 rounded-lg hover:bg-sky-100 cursor-pointer">Lamar Kerja</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: FAQ -->
+    <div id="faq" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-medium text-slate-900 mb-8 text-center">Pertanyaan Populer (FAQ)</h2>
+        <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-100">
+                <h4 class="font-semibold text-slate-800 text-sm">Berapa lama estimasi pengerjaan cucian kiloan?</h4>
+                <p class="text-xs text-slate-500 mt-2">Untuk layanan reguler memakan waktu 2 hingga 3 hari kerja. Sementara layanan kilat selesai dalam 24 jam dan express dalam 6 jam saja.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-100">
+                <h4 class="font-semibold text-slate-800 text-sm">Apakah pakaian saya akan dicampur dengan milik orang lain?</h4>
+                <p class="text-xs text-slate-500 mt-2">Sama sekali tidak. Kami berkomitmen menjaga higienitas penuh dengan menggunakan 1 mesin cuci khusus untuk 1 nota pengerjaan konsumen.</p>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-100">
+                <h4 class="font-semibold text-slate-800 text-sm">Bagaimana jika pakaian saya rusak atau hilang?</h4>
+                <p class="text-xs text-slate-500 mt-2">CleanWaves memberikan jaminan garansi ganti rugi hingga 10x lipat dari ongkos cuci item tersebut jika terbukti terjadi kesalahan kelalaian tim kami.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: BLOG -->
+    <div id="blog" class="page-section py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Tips & <span class="font-medium text-sky-600">Artikel Edukasi</span></h2>
+        <div class="grid sm:grid-cols-3 gap-6">
+            <div onclick="navigateTo('blog-detail')" class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-sm cursor-pointer hover:shadow-md transition-all">
+                <div class="h-40 bg-sky-100 flex items-center justify-center text-sky-400 text-xs p-4 text-center border-b">Thumbnail Edukasi</div>
+                <div class="p-4 space-y-2">
+                    <span class="text-[10px] uppercase text-sky-600 font-bold">Tips Merawat Kain</span>
+                    <h4 class="font-medium text-slate-800 text-sm">5 Cara Merawat Baju Batik Agar Warnanya Awet Tahunan</h4>
+                    <p class="text-xs text-slate-400">Baca selengkapnya...</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-sm opacity-80">
+                <div class="h-40 bg-emerald-100 flex items-center justify-center text-emerald-400 text-xs p-4 text-center border-b">Thumbnail Edukasi</div>
+                <div class="p-4 space-y-2">
+                    <span class="text-[10px] uppercase text-emerald-600 font-bold">Eco-Living</span>
+                    <h4 class="font-medium text-slate-800 text-sm">Mengapa Menggunakan Detergen Biodegradable Lebih Baik?</h4>
+                    <p class="text-xs text-slate-400">Segera terbit</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl overflow-hidden border border-slate-100 shadow-sm opacity-80">
+                <div class="h-40 bg-purple-100 flex items-center justify-center text-purple-400 text-xs p-4 text-center border-b">Thumbnail Edukasi</div>
+                <div class="p-4 space-y-2">
+                    <span class="text-[10px] uppercase text-purple-600 font-bold">Noda Bandel</span>
+                    <h4 class="font-medium text-slate-800 text-sm">Trik Ampuh Menghilangkan Noda Kopi Pada Kemeja Putih</h4>
+                    <p class="text-xs text-slate-400">Segera terbit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: BLOG DETAIL -->
+    <div id="blog-detail" class="page-section py-16 px-6 max-w-2xl mx-auto space-y-4">
+        <button onclick="navigateTo('blog')" class="text-xs text-sky-600 font-medium mb-2 inline-block cursor-pointer">← Kembali ke Ragam Artikel</button>
+        <br>
+        <span class="text-xs font-semibold text-sky-600 bg-sky-50 px-2 py-1 rounded">Panduan Cuci</span>
+        <h2 class="text-3xl font-bold text-slate-900 leading-tight">Cara Tepat Mencuci Dan Merawat Pakaian Berbahan Kain Batik Tulisan Alami</h2>
+        <p class="text-xs text-slate-400">Ditulis oleh Pakar Tekstil CleanWaves • 5 Menit Membaca</p>
+        <hr class="border-slate-100">
+        <div class="text-sm text-slate-600 space-y-4 leading-relaxed">
+            <p>Kain batik tulis menggunakan pewarna malam alami yang sangat rentan memudar jika disikat terlalu keras atau menggunakan sembarang detergen komersial bubuk kasar.</p>
+            <p>Disarankan selalu mencuci menggunakan cairan lerak khusus atau mempercayakannya pada ahlinya di layanan cuci premium kain batik khusus CleanWaves Laundry.</p>
+        </div>
+    </div>
+
+    <!-- SECTION: STRUKTUR MANAJEMEN -->
+    <div id="organisasi" class="page-section py-16 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-medium text-slate-900 mb-2">Struktur Tata Kelola Perusahaan</h2>
+        <p class="text-sm text-slate-500 mb-12">Tim di balik layar pengelolaan mutu operasional CleanWaves Indonesia.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white p-4 rounded-xl border border-slate-100"><div class="w-12 h-12 bg-sky-100 rounded-full mx-auto mb-2 flex items-center justify-center text-sky-600 font-bold text-xs">HK</div><h5 class="text-sm font-semibold">Haikal</h5><p class="text-[10px] text-slate-400">Chief Executive Officer</p></div>
+            <div class="bg-white p-4 rounded-xl border border-slate-100"><div class="w-12 h-12 bg-slate-100 rounded-full mx-auto mb-2 flex items-center justify-center text-slate-500 font-bold text-xs">AS</div><h5 class="text-sm font-semibold">Ahmad S.</h5><p class="text-[10px] text-slate-400">Head of Operations</p></div>
+            <div class="bg-white p-4 rounded-xl border border-slate-100"><div class="w-12 h-12 bg-slate-100 rounded-full mx-auto mb-2 flex items-center justify-center text-slate-500 font-bold text-xs">DK</div><h5 class="text-sm font-semibold">Dewi Kirana</h5><p class="text-[10px] text-slate-400">Quality Control Executive</p></div>
+            <div class="bg-white p-4 rounded-xl border border-slate-100"><div class="w-12 h-12 bg-slate-100 rounded-full mx-auto mb-2 flex items-center justify-center text-slate-500 font-bold text-xs">RP</div><h5 class="text-sm font-semibold">Rian Putra</h5><p class="text-[10px] text-slate-400">Logistics Manager</p></div>
+        </div>
+    </div>
+
+    <!-- SECTION: KONTAK -->
+    <div id="kontak-detail" class="page-section py-16 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Hubungi <span class="font-medium text-sky-600">CleanWaves</span></h2>
+        <div class="grid md:grid-cols-3 gap-6 text-center">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100">
+                <span class="text-2xl">📞</span>
+                <h4 class="font-medium text-slate-800 mt-2">Hotline Call Center</h4>
+                <p class="text-xs text-slate-500 mt-1">021-9876-5432</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100">
+                <span class="text-2xl">💬</span>
+                <h4 class="font-medium text-slate-800 mt-2">WhatsApp Official</h4>
+                <p class="text-xs text-slate-500 mt-1">+62 812-3456-7890</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100">
+                <span class="text-2xl">✉️</span>
+                <h4 class="font-medium text-slate-800 mt-2">Surel / Email</h4>
+                <p class="text-xs text-slate-500 mt-1">hello@cleanwaves.com</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION: LOKASI HUB -->
+    <div id="lokasi" class="page-section py-16 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Area & <span class="font-medium text-sky-600">Lokasi Outlet</span></h2>
+        <div class="space-y-4">
+            <div class="bg-white p-5 rounded-xl border border-slate-100 flex justify-between items-center">
+                <div>
+                    <h4 class="font-semibold text-slate-800">CleanWaves Hub - Kebon Jeruk</h4>
+                    <p class="text-xs text-slate-400">Jl. Raya Panjang No.45, Jakarta Barat (08:00 - 21:00)</p>
+                </div>
+                <span class="text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-1 rounded">Buka</span>
+            </div>
+            <div class="bg-white p-5 rounded-xl border border-slate-100 flex justify-between items-center">
+                <div>
+                    <h4 class="font-semibold text-slate-800">CleanWaves Hub - Sudirman Suite</h4>
+                    <p class="text-xs text-slate-400">Gedung Annex Lantai Dasar, Jakarta Pusat (07:00 - 22:00)</p>
+                </div>
+                <span class="text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-1 rounded">Buka</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS & PRIVACY -->
+    <div id="syarat-ketentuan" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Syarat & Ketentuan Penggunaan Layanan</h2>
+        <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+            <p>1. Setiap transaksi wajib dihitung berat timbangannya di depan kurir penjemputan atau dikonfirmasi ulang via video timbangan jika menggunakan sistem jemput lepas.</p>
+            <p>2. Batas komplain kesalahan, kelalaian, kekurangan jumlah baju, atau noda yang tidak hilang maksimal adalah 24 jam terhitung sejak barang diterima kembali oleh konsumen.</p>
+            <p>3. CleanWaves tidak bertanggung jawab atas luntur alami yang diakibatkan kualitas inferior dari pewarna kain bawaan baju milik pelanggan.</p>
+        </div>
+    </div>
+
+    <div id="kebijakan-privasi" class="page-section py-16 px-6 max-w-3xl mx-auto">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">Kebijakan Privasi Data Pelanggan</h2>
+        <div class="text-xs text-slate-600 space-y-3 leading-relaxed">
+            <p>CleanWaves berkomitmen menjaga kerahasiaan penuh data pribadi berupa Nama, Nomor Telepon, Alamat Rumah, serta histori pengiriman barang yang Anda kirimkan lewat aplikasi/situs web kami.</p>
+            <p>Kami tidak menjual, menyewakan, atau menyebarluaskan data Anda kepada pihak pengiklan eksternal mana pun di luar ekosistem operasional logistik pengantaran logistik kami.</p>
+        </div>
+    </div>
+
+    <!-- FRANCHISE / PARTNERSHIP -->
+    <div id="kemitraan" class="page-section py-16 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-light text-slate-900 mb-4">Mulai Bisnis Laundry Anda Bersama <span class="font-medium text-sky-600">CleanWaves Joint Partnership</span></h2>
+        <p class="text-sm text-slate-500 max-w-xl mx-auto mb-8">Dapatkan akses pasokan mesin industri berkelas, materi marketing komplit, serta software POS kasir laundry handal terintegrasi otomatis.</p>
+        <button onclick="alert('Proposal franchise dikirimkan ke email Anda setelah pengisian formulir kelayakan.')" class="bg-sky-600 hover:bg-sky-700 text-white text-xs font-semibold px-6 py-3 rounded-xl transition-all cursor-pointer">Unduh Proposal Kemitraan</button>
+    </div>
+
+    <!-- REVIEWS -->
+    <div id="testimoni" class="page-section py-16 px-6 max-w-5xl mx-auto">
+        <h2 class="text-3xl font-light text-center text-slate-900 mb-12">Apa Kata <span class="font-medium text-sky-600">Pelanggan Setia Kami</span></h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-sm text-slate-600 italic">"Semenjak langganan paket bulanan Gold Wave, saya tidak perlu pusing lagi mikirin cucian menumpuk setiap akhir pekan. Layanan antar-jemputnya sangat tepat waktu!"</p>
+                <div class="mt-4 text-xs font-semibold text-slate-800">- Amanda R., Karyawan Swasta</div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <p class="text-sm text-slate-600 italic">"Layanan cuci sepatu premiumnya mantap. Sepatu lari saya yang tadinya kusam penuh lumpur bisa kembali bersih kinclong seperti baru beli."</p>
+                <div class="mt-4 text-xs font-semibold text-slate-800">- Kevin H., Pegiat Olahraga</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-white border-t border-slate-100 py-12 text-center text-xs text-slate-400 space-y-4">
+        <div class="flex flex-wrap justify-center gap-4 text-slate-500 font-medium mb-4">
+            <button onclick="navigateTo('layanan')" class="hover:text-sky-600 cursor-pointer">Layanan</button>
+            <button onclick="navigateTo('harga')" class="hover:text-sky-600 cursor-pointer">Harga</button>
+            <button onclick="navigateTo('blog')" class="hover:text-sky-600 cursor-pointer">Edukasi Blog</button>
+            <button onclick="navigateTo('organisasi')" class="hover:text-sky-600 cursor-pointer">Manajemen</button>
+            <button onclick="navigateTo('kontak-detail')" class="hover:text-sky-600 cursor-pointer">Kontak</button>
+            <button onclick="navigateTo('lokasi')" class="hover:text-sky-600 cursor-pointer">Lokasi Hub</button>
+            <button onclick="navigateTo('syarat-ketentuan')" class="hover:text-sky-600 cursor-pointer">Syarat Ketentuan</button>
+            <button onclick="navigateTo('kebijakan-privasi')" class="hover:text-sky-600 cursor-pointer">Kebijakan Privasi</button>
+            <button onclick="navigateTo('kemitraan')" class="hover:text-sky-600 cursor-pointer">Franchise Mitra</button>
+            <button onclick="navigateTo('testimoni')" class="hover:text-sky-600 cursor-pointer">Ulasan Pelanggan</button>
+        </div>
+        <p>&copy; 2026 CleanWaves Laundry. All rights reserved. &middot; <a href="admin.html" class="hover:text-sky-600">Login Staf/Admin</a></p>
+    </footer>
+
+    <!-- CORE LOGIC JAVASCRIPT -->
+    <script src="index.js"></script>
+</body>
+</html>
